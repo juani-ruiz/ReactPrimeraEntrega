@@ -1,0 +1,16 @@
+.ItemContent-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: end;
+    column-gap: 60px;
+}
+
+.list-section{
+    
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    
+
+}
