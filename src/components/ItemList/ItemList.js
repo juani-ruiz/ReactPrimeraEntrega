@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image, Divider, Icon } from 'semantic-ui-react'
+import { Card, Image, Divider } from 'semantic-ui-react'
 
 const ItemList = (props) => (
 

@@ -3,8 +3,8 @@ import Home from './views/Home/Home';
 import Nosotros from './views/Nosotros/Nosotros';
 import Productos from './views/Productos/Productos';
 import Contacto from './views/Contacto/Contacto';
-
 import CharacterDetail from './views/CharacterDetail/CharacterDetail';
+import Cart from './views/Cart/Cart';
 import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -26,6 +26,7 @@ function App() {
             <Route path="/productos" component={Productos} />
             <Route path="/contacto" component={Contacto} />
             <Route path="/detail/:id" component={CharacterDetail} />
+            <Route path="/cart" component={Cart} />
           </Switch>
 
       </div>

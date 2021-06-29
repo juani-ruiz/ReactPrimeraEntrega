@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Item from '../Item/Item';
+import ItemDetail from '../ItemDetail/ItemDetail';
 import axios from 'axios';
 import './ItemContent.css';
-import { Link } from 'react-router-dom';
 
 function ItemContent() {
     const [characters, setCharacters] = useState([])
@@ -19,9 +18,9 @@ function ItemContent() {
             {characters.map((char) => {
                 return(
                     <div className='list-section'>
-                        <Link to={`/detail/${char.char_id}`}> 
-                            <Item data={char} /> 
-                        </Link>                       
+                       
+                            <ItemDetail data={char} /> 
+                                              
                     </div>
 
                 );

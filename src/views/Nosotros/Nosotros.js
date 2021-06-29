@@ -9,7 +9,8 @@ function Nosotros() {
             <br />
             <br />
 
-            <h4>Dentro de poco vamos a tene API y vas a poder ver todas las bicis!!!</h4>
+            <h4>Dentro de poco vamos a tener API y vas a poder ver todas las bicis!!!</h4>
+            
             <br />
             <br />
             <br />

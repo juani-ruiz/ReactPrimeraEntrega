@@ -7,7 +7,7 @@ function CharacterDetail({ match }) {
 	// console.log('MATCH', match);
 	let charID = match.params.id;
 	const [character, setCharacter] = useState([]);
-	console.log('PERSONAJE', character);
+	console.log(charID);
 	useEffect(() => {
 		axios(`https://breakingbadapi.com/api/characters/${charID}`).then((res) =>
 			// console.log(res.data)
