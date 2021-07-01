@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Image } from 'semantic-ui-react';
 import axios from 'axios';
+import ItemCount from '../../components/ItemCount/ItemCount';
+ 
 import './CharacterDetail.css';
 
 function CharacterDetail({ match }) {
 	// console.log('MATCH', match);
 	let charID = match.params.id;
 	const [character, setCharacter] = useState([]);
-	console.log(charID);
+	//console.log(charID);
 	useEffect(() => {
 		axios(`https://breakingbadapi.com/api/characters/${charID}`).then((res) =>
 			// console.log(res.data)
@@ -29,6 +31,9 @@ function CharacterDetail({ match }) {
 							</Card.Meta>
 							<Card.Description>{char.nickname}</Card.Description>
 						</Card.Content>
+
+						<ItemCount />
+
 					</Card>
 				);
 			})}
