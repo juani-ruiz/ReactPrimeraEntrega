@@ -19,7 +19,7 @@ function ItemContent() {
                 return(
                     <div className='list-section'>
                        
-                            <ItemDetail data={char} /> 
+                            <ItemDetail data={0} /> 
                                               
                     </div>
 
