@@ -9,10 +9,8 @@ import Menu from './components/Menu/Menu';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { CartProvider } from './components/CartContext/CartContext';
-
-
-
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Products from './components/Products';
 
 function App() {
   return (   
@@ -34,9 +32,12 @@ function App() {
 
         </div>
 
+        <Products />
+
         <Footer />
+
       </CartProvider>
-    </Router>
+    </Router> 
 
    
 
