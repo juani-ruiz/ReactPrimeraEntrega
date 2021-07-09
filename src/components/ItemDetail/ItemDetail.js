@@ -1,23 +1,22 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
 import './ItemDetail.css'
-
 import {Link} from 'react-router-dom';
 
-const ItemDetail = ({ data }) => {
+const ItemDetail = ({ prop }) => {
   
   return (
     
         <div>
-            <Link to={`/detail/${data.char_id}`}>  
-              <Card style={{ width: 200 }} key={data.char_id}>
-                <Image src={data.img} wrapped ui={false} />
+            <Link to={`/detail/${prop.id}`}>  
+              <Card style={{ width: 200 }} key={prop.id}>
+                <Image src={} wrapped ui={false} />
                 <Card.Content>
-                  <Card.Header>{data.name}</Card.Header>
+                  <Card.Header>{prop.titulo}</Card.Header>
                   <Card.Meta>
-                    <span className='date'>{data.birthday}</span>
+                    <span className='date'>{prop.precio}</span>
                   </Card.Meta>
-                  <Card.Description>Status: {data.status}</Card.Description>
+                  <Card.Description>Status: {prop.descripcion}</Card.Description>
                 </Card.Content>
                 
                                         

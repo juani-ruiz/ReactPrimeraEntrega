@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Image } from 'semantic-ui-react';
-import axios from 'axios';
+import { db } from '../firebase';
 import ItemCount from '../../components/ItemCount/ItemCount';
  
 import './CharacterDetail.css';
 
 function CharacterDetail({ match }) {
 	// console.log('MATCH', match);
-	let charID = match.params.id;
+	//let charID = match.params.id;
 	const [character, setCharacter] = useState([]);
 	//console.log(charID);
-	useEffect(() => {
-		axios(`https://breakingbadapi.com/api/characters/${charID}`).then((res) =>
+	//useEffect(() => {
+		//axios(`https://breakingbadapi.com/api/characters/${charID}`).then((res) =>
 			// console.log(res.data)
-			setCharacter(res.data)
-		);
-	}, [charID]);
+			//setCharacter(res.data)
+		//);
+	//}, [charID]);
 
 	return (
 		<div className='CharacterDetail' style={{ padding: 40 }}>

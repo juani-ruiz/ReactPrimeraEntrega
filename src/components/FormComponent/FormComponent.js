@@ -4,7 +4,7 @@ import { Button, Form, TextArea } from 'semantic-ui-react';
 
 const FormComponent = ({ addOrEdit }) => {
     const initialState = {
-        producto: '',
+        titulo: '',
         precio: '',
         descripcion: '',
 
@@ -31,10 +31,10 @@ const FormComponent = ({ addOrEdit }) => {
             <Form onSubmit={handleOnSubmit}>
                <Form.Field>
                     <input 
-                        placeholder='producto' 
+                        placeholder='titulo' 
                         onChange={handleOnChange}  
-                        name='producto'
-                        value={values.producto}
+                        name='titulo'
+                        value={values.titulo}
                     />
                </Form.Field>
 

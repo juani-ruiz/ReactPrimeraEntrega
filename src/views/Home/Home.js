@@ -1,12 +1,13 @@
 import React from 'react'
-import ItemContent from '../../components/ItemContent/ItemContent';
+import './Home.css';
+import Products from '../../components/Products';
+
 
 
 function Home() {
     return (
-        <div className="Container fluid">
-            
-        <ItemContent />
+        <div className="Home">            
+            <Products />        
         </div>
     )
 }

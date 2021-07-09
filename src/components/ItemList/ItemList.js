@@ -1,10 +1,12 @@
 import React from 'react'
 import { Card, Image, Divider } from 'semantic-ui-react'
 
-const ItemList = (props) => (
+import {Link} from 'react-router-dom';
+
+const ItemList = ({prop}) => (
 
     
-
+<Link to={`/detail/${prop.id}`}> 
     <Card fluid >     
 
                     <Card.Content>
@@ -12,26 +14,27 @@ const ItemList = (props) => (
                             as='a'               
                             floated='center'
                             size='tiny'
-                            src= { props.data.img}
+                            src= { prop.titulo }
                         />
                         <Card.Header>
-                            <a href="/">{ props.data.name }</a>
+                            <a href="/">{ prop.precio }</a>
                         </Card.Header>
                         
                         <Card.Header>
-                            { props.data.birthday }    
+                            { prop.descripcion }    
                         </Card.Header>
 
                         <Divider clearing />
 
                         <Card.Header active>
-                            Status : { props.data.status }
+                            Status : 
                         </Card.Header>
 
                        
                     </Card.Content>
 
                 </Card>  
+</Link>
 )
 
 export default ItemList
